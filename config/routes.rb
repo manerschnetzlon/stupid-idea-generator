@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root to: 'ideas#index'
-  get 'index', to: 'ideas#index'
+  root to: 'pages#home'
+  resources :ideas, only: %i[show create]
+  # get 'generate', to: 'ideas#generate'
 end
