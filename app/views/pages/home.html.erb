@@ -1,11 +1,5 @@
-<h1>Générateur d'idées stupides</h1>
-<%= link_to "Générer une nouvelle idée stupide", ideas_path, method: :post %>
-
-<h2>Les dernières idées stupides</h2>
-<ul>
-  <% @ideas.each do |idea| %>
-    <li>
-      <%= idea.name %>
-    </li>
-  <% end %>
-</ul>
+<div class="d-flex justify-content-center align-items-center text-center h-30">
+</div>
+<div class="d-flex justify-content-center align-items-center">
+  <%= link_to "Générer une nouvelle idée", ideas_path, method: :post, class: "btn btn-white btn-rounded" %>
+</div>

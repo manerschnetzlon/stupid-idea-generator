@@ -1,0 +1,17 @@
+.btn-white {
+  background-color: #ffffff2b;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  border-width: 2px;
+
+  &:hover {
+    background-color: #0b588f13;
+    color: #0b598f;
+    border-color: #0b598f;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.btn-rounded {
+  border-radius: 30px
+}

@@ -10,4 +10,26 @@
 
 // Your CSS partials
 @import "components/index";
+@import "ideas/show";
 @import "pages/index";
+
+body {
+  color: white;
+  height: 100vh;
+  background: linear-gradient(to top left, #7581ff, rgba(255, 153, 150, 0), #ffbb8a),
+              linear-gradient(to top right, #ff4775, rgba(255, 153, 150, 0), #00ffff) #ff7070;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.788);
+  }
+}
+
+.main-container {
+  height: 87%;
+  overflow: auto;
+}

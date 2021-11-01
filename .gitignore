@@ -36,3 +36,4 @@ yarn-debug.log*
 .yarn-integrity
 db/dictionnaire.json
 db/old_dictionary.json
+db/dictionnaire.json
