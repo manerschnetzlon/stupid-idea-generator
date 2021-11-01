@@ -443,7 +443,9 @@
         "déconnecter",
         "vloguer",
         "interconnecter",
-        "disrupter"
+        "disrupter",
+        "coder",
+        "développer"
       ],
       "intransitifs": [
         "plaider#1{coupable}",
@@ -1444,19 +1446,23 @@
       "un site web",
       "une page web",
       "un générateur",
-      "une machine",
+      "une méchanisme",
       "un dispositif ",
       "une application",
       "une API",
       "une commande",
       "un protocole",
+      "un réseau",
+      "un réseau intranet",
       "un réseau social",
       "un bot",
       "une interface",
       "un réseau",
       "un tchat",
       "un navigateur",
-      "un moteur de recherche"
+      "un moteur de recherche",
+      "un saas",
+      "une app"
     ],
     "complements": {
       "objDir": [
@@ -1488,7 +1494,6 @@
         "les membres du conseil d'administration",
         "le chien du voisin",
         "votre médecin traitant",
-        "cette colonie de termites",
         "les plus hauts nuages",
         "une averse passagère",
         "les outils les plus adaptés",
@@ -1754,7 +1759,8 @@
         "une SARL en cogestion",
         "la French Tech",
         "un échosystème digital",
-        "un incubateur de startups"
+        "un incubateur de startups",
+        "une licorne"
       ]
     }
   }
