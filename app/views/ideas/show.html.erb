@@ -1,0 +1,11 @@
+<h1><%= @idea.name %></h1>
+<%= link_to "Generate a stupid idea", ideas_path, method: :post %>
+
+<h2>Last stupid ideas</h2>
+<ul>
+  <% @ideas.each do |idea| %>
+    <li>
+      <%= idea.name %>
+    </li>
+  <% end %>
+</ul>

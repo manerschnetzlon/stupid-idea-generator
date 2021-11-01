@@ -1,2 +1,11 @@
-<h1>Stupid idea generator</h1>
-<%= link_to "Generate a stupid idea", ideas_path, method: :post %>
+<h1>Générateur d'idées stupides</h1>
+<%= link_to "Générer une nouvelle idée stupide", ideas_path, method: :post %>
+
+<h2>Les dernières idées stupides</h2>
+<ul>
+  <% @ideas.each do |idea| %>
+    <li>
+      <%= idea.name %>
+    </li>
+  <% end %>
+</ul>
