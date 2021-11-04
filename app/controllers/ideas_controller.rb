@@ -1,9 +1,13 @@
 require 'json'
 
 class IdeasController < ApplicationController
+  def index
+    @ideas = Idea.all.order(created_at: :desc)
+  end
+
   def show
     @idea = Idea.find(params[:id])
-    @last_ideas = Idea.all.order(created_at: :desc).limit(5)
+    # @last_ideas = Idea.all.order(created_at: :desc).limit(5)
   end
 
   def create
@@ -30,10 +34,10 @@ class IdeasController < ApplicationController
   end
 end
 
-# TODO :
-# gerer multiline typewriting
-# index de toutes les dernieres idées
-# adopter une idée
-  # formulaire pour mettre nom
-  # impossible de regenerer cette phrase
-
+# A FAIRE :
+## gerer multiline typewriting OK
+## validation uniqueness OK
+## index de toutes les dernieres idees
+## adopter une idee
+### formulaire pour mettre nom
+### impossible de regenerer cette phrase

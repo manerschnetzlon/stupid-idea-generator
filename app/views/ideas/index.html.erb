@@ -1,0 +1,10 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <h4 class="text-center mb-3">Toutes les idées précédemment générées (<%= @ideas.count %>) :</h4>
+  <ul>
+    <% @ideas.find_each do |idea| %>
+      <li>
+        <%= idea.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>
