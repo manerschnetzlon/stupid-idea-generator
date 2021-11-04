@@ -29,3 +29,11 @@ class IdeasController < ApplicationController
     sentence.gsub(/#\d+/, '').gsub(/{/, ' ').gsub(/}/, '')
   end
 end
+
+# TODO :
+# gerer multiline typewriting
+# index de toutes les dernieres idées
+# adopter une idée
+  # formulaire pour mettre nom
+  # impossible de regenerer cette phrase
+
