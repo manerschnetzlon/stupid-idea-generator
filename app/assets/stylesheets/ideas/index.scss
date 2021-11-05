@@ -1,11 +1,5 @@
-// .all-ideas {
-//   scrollbar-width: none;
-//   /* For Firefox */
-//   -ms-overflow-style: none;
-//   /* For Internet Explorer and Edge */
-// }
-
-// .all-ideas::-webkit-scrollbar {
-//   width: 0px;
-//   /* For Chrome, Safari, and Opera */
-// }
+.li-idea {
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+}

@@ -15,6 +15,9 @@
       <%= link_to root_path do %>
         <h4 class="m-0">Stupid Idea Generator</h4>
       <% end %>
+      <% if params[:action] == 'index' %>
+          <h5 class="m-0"> &nbsp; > Toutes les idées précédemment générées</h5>
+      <% end %>
     </nav>
     <div class="main-container p-3 d-flex flex-column">
       <%= yield %>

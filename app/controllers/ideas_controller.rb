@@ -3,6 +3,7 @@ require 'json'
 class IdeasController < ApplicationController
   def index
     @ideas = Idea.all.order(created_at: :desc)
+    # raise
   end
 
   def show
@@ -16,7 +17,7 @@ class IdeasController < ApplicationController
     if @idea.save
       redirect_to idea_path(@idea)
     else
-      redirect_to ideas_path, notice: 'something went wrong'
+      redirect_to root_path, notice: 'something went wrong'
     end
   end
 
@@ -37,7 +38,8 @@ end
 # A FAIRE :
 ## gerer multiline typewriting OK
 ## validation uniqueness OK
-## index de toutes les dernieres idees
+## index de toutes les dernieres idees OK
+## enlever scoll bar NOPE
 ## adopter une idee
 ### formulaire pour mettre nom
-### impossible de regenerer cette phrase
+### impossible de regenerer cette phrase OK
