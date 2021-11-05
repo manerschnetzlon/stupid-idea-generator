@@ -1,5 +1,5 @@
 # [Un générateur d'idées plus stupides que la stupidité](https://stupid-idea-generator.herokuapp.com).
-Vous souhaiter vous entraîner à développer des petites app web, mais vous êtes à court d'inspiration ?
+Vous souhaitez vous entraîner à développer des petites app web, mais vous êtes à court d'inspiration ?
 </br>
 Pas de panique, vous pouvez dès maintenant utiliser ce générateur d'idées stupides développé avec amour et mes petites pattes de moineau.
 </br></br>
