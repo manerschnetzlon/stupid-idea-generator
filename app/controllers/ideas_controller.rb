@@ -27,10 +27,15 @@ class IdeasController < ApplicationController
     serialized_dictionary = File.read('db/dictionnaire.json')
     dictionary = JSON.parse(serialized_dictionary)
     subject = dictionary['dictionnaire']['sujets'].sample
-    verb = dictionary['dictionnaire']['verbes']['transitifs'].sample
-    complement = dictionary['dictionnaire']['complements']['objDir'].sample
-    sentence = "#{subject.capitalize} pour #{verb} #{complement}."
-
+    random = [1, 2].sample
+    if random == 1
+      verb = dictionary['dictionnaire']['verbes']['transitifs'].sample
+      complement = dictionary['dictionnaire']['complements']['objDir'].sample
+      sentence = "#{subject.capitalize} pour #{verb} #{complement}."
+    else
+      verb = dictionary['dictionnaire']['verbes']['intransitifs'].sample
+      sentence = "#{subject.capitalize} pour #{verb}."
+    end
     sentence.gsub(/#\d+/, '').gsub(/{/, ' ').gsub(/}/, '')
   end
 end
@@ -43,4 +48,4 @@ end
 ## adopter une idee
 ### formulaire pour mettre nom
 ### impossible de regenerer cette phrase OK
-#### pages 404 500 + favicon + etc.
+#### pages 404 500 + favicon + etc. OK
