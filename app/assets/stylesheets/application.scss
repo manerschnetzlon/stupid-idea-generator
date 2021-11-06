@@ -35,3 +35,9 @@ a {
   overflow: auto;
   overflow: auto;
 }
+
+@include media-breakpoint-down(md) {
+  h5 {
+    font-size: 1rem;
+  }
+}

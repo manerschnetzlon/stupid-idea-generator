@@ -390,7 +390,11 @@
         "compiler",
         "exploiter",
         "mettre en ligne",
-        "implémenter"
+        "implémenter",
+        "revendre",
+        "noter",
+        "estimer",
+        "louer"
       ],
       "intransitifs": [
         "plaider#1{coupable}",
@@ -1150,7 +1154,6 @@
         "un nombre aléatoire",
         "la rumeur",
         "les portes de l'au-delà",
-        "un simple graphe orienté acyclique",
         "tout le matériel nécessaire",
         "notre culpabilité",
         "le web",

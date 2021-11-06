@@ -43,3 +43,4 @@ end
 ## adopter une idee
 ### formulaire pour mettre nom
 ### impossible de regenerer cette phrase OK
+#### pages 404 500 + favicon + etc.
