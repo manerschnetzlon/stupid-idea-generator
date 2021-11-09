@@ -1,5 +1,5 @@
 # [Un générateur d'idées plus stupides que la stupidité](https://stupid-idea-generator.herokuapp.com).
-### Vous êtes un développeur / entrepreneur / pisciniste en reconversion, et vous souhaitez lancer une licorne qui vous rendra multimilliardaire, mais vous n'avez pas d'idée de projet ? 
+### Vous êtes un développeur / entrepreneur / pisciniste en reconversion et vous souhaitez lancer une licorne qui vous rendra multimilliardaire, mais vous n'avez pas d'idée de projet ? 
 Pas de panique, vous pouvez dès maintenant utiliser ce générateur d'idées stupides développé avec amour et mes petites pattes de moineau.
 </br></br>
 <p align="center" width="100%">
