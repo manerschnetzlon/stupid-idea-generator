@@ -1,9 +1,18 @@
 <div class="d-flex flex-column justify-content-center align-items-center">
   <ul class="list-unstyled">
     <% @ideas.each do |idea| %>
-      <%= link_to idea_path(idea) do %>
-        <li class="li-idea p-2 border-bottom"><%= idea.name %></li>
-      <% end %>
+      <li class="li-idea p-2 border-bottom">
+        <% if idea.liked?(current_user)  %>
+          <% like = Like.find_by(user: current_user, idea: idea) %>
+          <%= link_to "▲", like_path(like), method: :delete, class: "me-3 d-inline", remote: :true %>
+        <% else %>
+          <%= link_to '△', idea_likes_path(idea), method: :post, class: "me-3 d-inline", remote: :true %>
+        <% end %>
+        <%= link_to idea_path(idea), class:"d-inline" do %>
+          <%= idea.name %>
+        <% end %>
+        <small class="ms-3"><%= idea.likes_count %> point <%= 's' if idea.likes_count > 1 %></small>
+      </li>
     <% end %>
   </ul>
 </div>
