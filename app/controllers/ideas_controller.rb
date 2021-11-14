@@ -1,9 +1,10 @@
 require 'json'
 
 class IdeasController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show, :create]
+
   def index
     @ideas = Idea.all.order(created_at: :desc)
-    # raise
   end
 
   def show
