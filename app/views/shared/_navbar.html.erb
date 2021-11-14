@@ -6,7 +6,19 @@
     <h5 class="m-0"> &nbsp; > Toutes les idées</h5>
   <% end %>
 
-  <%= link_to profile_path, class: 'profile' do %>
-    <i class="far fa-user-circle h3 m-0"></i>
-  <% end %>
+  <li class="nav-item dropdown profile">
+    <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="far fa-user-circle h3 m-0"></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <% if user_signed_in? %>
+        <li><%= link_to "Dashboard", profile_path, class: "dropdown-item" %></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+      <% else %>
+        <li><%= link_to "Connexion", new_user_session_path, class: "dropdown-item" %></li>
+      <% end %>
+    </ul>
+  </li>
+
 </nav>

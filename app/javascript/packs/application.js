@@ -19,3 +19,5 @@ document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   typing();
 });
+
+import "controllers"
