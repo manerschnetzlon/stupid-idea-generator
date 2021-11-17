@@ -9,6 +9,7 @@ class IdeasController < ApplicationController
 
   def show
     @idea = Idea.find(params[:id])
+    @like = Like.new
     # @last_ideas = Idea.all.order(created_at: :desc).limit(5)
   end
 
