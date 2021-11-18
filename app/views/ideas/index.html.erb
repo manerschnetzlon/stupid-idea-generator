@@ -4,7 +4,7 @@
       <li class="li-idea p-2 border-bottom" id="idea-<%= idea.id %>">
         <% if idea.liked?(current_user)  %>
           <% like = Like.find_by(user: current_user, idea: idea) %>
-          <%= link_to "▲", like_path(like, params: { from_page: params[:action] }), method: :delete, class: "me-3 d-inline", remote: :true %>
+          <%= link_to "▲", like_path(like, params: { from_page: params[:action] }), method: :delete, class: "me-3 d-inline", remote: user_signed_in? %>
         <% else %>
           <%= link_to '△', idea_likes_path(idea, params: { from_page: params[:action] }), method: :post, class: "me-3 d-inline", remote: user_signed_in? %>
         <% end %>

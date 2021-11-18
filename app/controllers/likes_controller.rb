@@ -1,14 +1,17 @@
 class LikesController < ApplicationController
+
   def create
     @like = Like.new(user: current_user, idea: Idea.find(params[:idea_id]))
-    notice = 'Zut un problème est survenu' unless @like.save
-    save_redirection(@like, notice)
+    @like.save
+    # notice = 'Zut un problème est survenu' unless @like.save
+    # save_redirection(@like, notice)
   end
 
   def destroy
     @like = Like.find(params[:id])
-    notice = 'Zut un problème est survenu' unless @like.destroy
-    save_redirection(@like, notice)
+    @like.destroy
+    # notice = 'Zut un problème est survenu' unless @like.destroy
+    # save_redirection(@like, notice)
   end
 
   private

@@ -7,7 +7,7 @@
 <div class="likes text-center mb-3">
   <% if @idea.liked?(current_user) %>
     <% like = Like.find_by(user: current_user, idea: @idea) %>
-    <%= link_to "▲", like_path(like, params: { from_page: params[:action] }), method: :delete, remote: :true %>
+    <%= link_to "▲", like_path(like, params: { from_page: params[:action] }), method: :delete, remote: user_signed_in? %>
   <% else %>
     <%= link_to "△", idea_likes_path(@idea, params: { from_page: params[:action] }), method: :post, remote: user_signed_in? %>
   <% end %>
@@ -26,12 +26,7 @@
       <div data-insert-in-list-target="items">
         <!-- [...] -->
       </div>
-      <%= simple_form_for([@idea, @like],
-                    data: {
-                      insert_in_list_target: 'form',
-                      action: 'submit->insert-in-list#send'
-                    }) do |f| %>
-        <!-- [...] -->
+      <%= simple_form_for([@idea, @comment], data: { insert_in_list_target: 'form', action: 'submit->insert-in-list#send' }) do |f| %>
       <% end %>
     </div>
   </div>
